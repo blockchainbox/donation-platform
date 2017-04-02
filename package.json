@@ -1,0 +1,25 @@
+{
+  "name": "donate-platform",
+  "version": "1.0.0",
+  "description": "nccu donation platform",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blockchainbox/donate-platform.git"
+  },
+  "author": "jason.wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blockchainbox/donate-platform/issues"
+  },
+  "homepage": "https://github.com/blockchainbox/donate-platform#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "pm2": "^2.4.3",
+    "pm2-server-monit": "^2.5.0",
+    "pmx": "^1.1.0"
+  }
+}
