@@ -1,0 +1,9 @@
+version: '2'
+services:
+  postgres:
+    container_name: nccudonation-postgres 
+    image: nccudonation/postgres:latest
+    build: postgres/
+    ports:
+      - 5432:5432
+     
