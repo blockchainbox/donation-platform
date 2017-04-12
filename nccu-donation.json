@@ -1,0 +1,14 @@
+{
+  apps : [
+    {
+      name          : "nccu-donation",
+      script        : "./bin/www",
+      watch         : true,
+      env: {
+        "NODE_ENV"          : "development",       
+        "POSTGRESQL_HOST"   : "localhost",
+        "POSTGRESQL_PORT"   : 5432
+      }
+    }
+  ]
+}
