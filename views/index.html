@@ -7,13 +7,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Project name</a>
+      <a class="navbar-brand" href="/">捐政</a>
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <!--<li class="active"><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>-->
       </ul>
     </div>
   </div>
@@ -22,16 +22,37 @@
 <div class="container">
 
   <div class="starter-template">
-    <h1>Bootstrap starter template</h1>
-    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-  </div>
-
+    <div class="wrapper">
+      <form action="/" method="post" name="Login_Form" class="form-signin">       
+          <h3 class="form-signin-heading">Welcome Back to 捐政 !</h3>
+          <hr class="colorgraph"><br>
+          
+          <input type="text" class="form-control" name="Username" placeholder="Username" required="" autofocus="" />
+          <input type="password" class="form-control" name="Password" placeholder="Password" required=""/>          
+         
+          <button class="btn btn-lg btn-primary btn-block"  name="Submit" value="Login" type="Submit">Login</button>
+          
+          <a href="/register" class="btn btn-lg btn-success btn-block" role="button">Register</a> 
+          <br/>
+          <div >
+            <h4 id='blockchain-status' class="form-signin-heading"></h4>
+          </div>
+          
+      </form>     
+    </div>
+  </div>     
 </div>
 
 <script>
 
 $( document ).ready(function() {
-    test();
+   // $.getJSON( "http://ec2-54-245-145-0.us-west-2.compute.amazonaws.com:3000/v1/health", function( data ) {
+   //  console.log(data); 
+   // });
+   //var status = ' <span class="label label-danger">Danger</span>';
+   var status = ' <span class="label label-success">Success</span>';
+   $('#blockchain-status').html('Blockchain Status: ' + status);
+   
 });
 </script>
 
