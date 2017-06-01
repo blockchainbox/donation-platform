@@ -42,9 +42,8 @@ ALTER TABLE TransactionData
 
 CREATE TABLE IF NOT EXISTS Account (
 	id serial primary key,
-	address text,
+	account text,
 	passphrase text,	-- hash
-	name text,
 	email text,
 	createTimestamp timestamp with time zone
 );

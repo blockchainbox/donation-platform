@@ -27,10 +27,10 @@
           <h3 class="form-signin-heading">Welcome Back to 捐政 !</h3>
           <hr class="colorgraph"><br>
           
-          <input type="text" class="form-control" name="Username" placeholder="Username" required="" autofocus="" />
-          <input type="password" class="form-control" name="Password" placeholder="Password" required=""/>          
+          <input id='account_field' type="text" class="form-control" name="Username" placeholder="Username" required autofocus="" />
+          <input type="password" class="form-control" name="Password" placeholder="Password" required />          
          
-          <button class="btn btn-lg btn-primary btn-block"  name="Submit" value="Login" type="Submit">Login</button>
+          <button id='login_btn' class="btn btn-lg btn-primary btn-block"  name="Submit" value="Login">Login</button>
           
           <a href="/register" class="btn btn-lg btn-success btn-block" role="button">Register</a> 
           <br/>
@@ -46,13 +46,22 @@
 <script>
 
 $( document ).ready(function() {
-   // $.getJSON( "http://ec2-54-245-145-0.us-west-2.compute.amazonaws.com:3000/v1/health", function( data ) {
-   //  console.log(data); 
-   // });
-   //var status = ' <span class="label label-danger">Danger</span>';
-   var status = ' <span class="label label-success">Success</span>';
-   $('#blockchain-status').html('Blockchain Status: ' + status);
-   
+  $.getJSON( "http://ec2-54-245-145-0.us-west-2.compute.amazonaws.com:3000/v1/health", function( data ) {
+      //console.log(data.status); 
+      if(data.status === 'OK')
+         var status = ' <span class="label label-success">Success</span>';
+      else
+         var status = ' <span class="label label-danger">Danger</span>';
+
+      $('#blockchain-status').html('Blockchain Status: ' + status);
+  }); 
+
+  $( "#login_btn" ).click(function() {
+
+  });
+
+
+
 });
 </script>
 

@@ -1,0 +1,27 @@
+{
+  "account": "wangpiju0420",
+  "address": "0x2b8288ec9238b56144313a6a8fd33e4d0285f3bf",
+  "keystore": {
+    "address": "2b8288ec9238b56144313a6a8fd33e4d0285f3bf",
+    "crypto": {
+      "cipher": "aes-128-ctr",
+      "ciphertext": "e977d996e69b60bfb2cf75892f287c12c4b6fc243b7b2e6d899a01d724e433d1",
+      "cipherparams": {
+        "iv": "ca6955f7d7d7dc3ef200185198daf247"
+      },
+      "kdf": "scrypt",
+      "kdfparams": {
+        "dklen": 32,
+        "n": 262144,
+        "p": 1,
+        "r": 8,
+        "salt": "699f71a24ccd19566e21ff664018e6d3f4419ff2dc7ea9a36c741d72c654f6e2"
+      },
+      "mac": "a252a5280195691427a01699bdcf080fb98647542c83aa56f753c3f42256b709"
+    },
+    "id": "46557d32-c447-4d07-a676-eafeb55c93e3",
+    "version": 3
+  },
+  "passphrase": "d9865a72447818c289cf705e5bb17c5de904e7735b3154bc63bc64ff",
+  "accessToken": "7da6a630ef274ac3654563ec5f4ec4c8ee1aa656f36b5e3f5dd75865"
+}
